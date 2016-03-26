@@ -2,6 +2,7 @@ package base;
 
 import java.awt.Color;
 
+import base.custom_blocks.DamageBlock;
 import fr.pwal.graphics.base.Application;
 import fr.pwal.level.Block;
 import fr.pwal.level.Level;
@@ -9,7 +10,7 @@ import fr.pwal.level.Player;
 
 public class Main {
 	public static void main(String args[]) {
-		Block[] blocks = { new Block('A', "/ressources/textures/blocks/grass_side.png"), new Block('B', "/ressources/textures/blocks/sand.png"),
+		Block[] blocks = { new DamageBlock('A', "/ressources/textures/blocks/grass_side.png"), new Block('B', "/ressources/textures/blocks/sand.png"),
 						new Block('C', "/ressources/textures/blocks/cobblestone.png"), new Block('D', "/ressources/textures/blocks/stone_slab_side.png"),
 						new Block('E', "/ressources/textures/blocks/door_wood_lower.png"), new Block('F', "/ressources/textures/blocks/door_wood_upper.png"), 
 						new Block('G', "/ressources/textures/blocks/door_iron_lower.png"), new Block('H', "/ressources/textures/blocks/door_iron_upper.png"), 
