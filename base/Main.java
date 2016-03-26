@@ -1,6 +1,12 @@
 package base;
 
 import java.awt.Color;
+import java.net.URL;
+
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
 
 import base.custom_blocks.DamageBlock;
 import fr.pwal.graphics.base.Application;
@@ -18,6 +24,16 @@ public class Main {
 
 		Application app = new Application("Test", 950, 400, 2.0f,  new Level("/ressources", blocks, new Player[] { new Player("Gagoi", "/ressources/textures/sonic.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE), new Player("Denki", "/ressources/textures/knuckles.png", new int[] { 38, 37, 40, 39, 96 }, Color.RED) }));
 
+//		
+//		URL url = Main.class.getResource("/ressources/sound.wav");
+//		try {
+//			Clip clip = AudioSystem.getClip();
+//			AudioInputStream audioIn = AudioSystem.getAudioInputStream(url);	
+//			clip.open(audioIn);
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		// try {
 		// app.add(new
 		// PWAL_Picture(ImageIO.read(Main.class.getResource("/sonic.png")), 0,
