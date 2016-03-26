@@ -3,7 +3,7 @@ package base.custom_blocks;
 import java.awt.Color;
 
 import fr.pwal.base.physic.BlockEffect;
-import fr.pwal.graphics.base.graphics.level.BlockOverlay;
+import fr.pwal.graphics.base.graphics.window.BlockOverlay;
 import fr.pwal.level.Block;
 import fr.pwal.level.Player;
 
