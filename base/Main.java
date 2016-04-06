@@ -16,9 +16,10 @@ public class Main {
 						new Block('G', "/ressources/textures/blocks/door_iron_lower.png", false), new Block('H', "/ressources/textures/blocks/door_iron_upper.png", false),
 						new Block('I', "/ressources/textures/blocks/wool_colored_light_blue.png", false), new Block('J', "/ressources/textures/blocks/dirt.png") };
 
-		Application app = new Application("Test", 950, 400, 2.0f, new Level("/ressources", blocks, 
-				new Player[] { new Player("Gagoi", "/ressources/textures/sonic.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE), 
+		Application app = new Application("Test", 950, 400, 3.0f, new Level("/ressources", blocks,
+				new Player[] { new Player("Gagoi", "/ressources/textures/characters/Sprite1.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE),
+								new Player("Denki_le_moche", "/ressources/textures/characters/Sprite2.png", new int[] { 38, 37, 40, 39, 96 }, Color.PINK)
 						//new Player("Denki", "/ressources/textures/knuckles.png", new int[] { 38, 37, 40, 39, 96 }, Color.RED)
-						}));
+				}));
 	}
 }
