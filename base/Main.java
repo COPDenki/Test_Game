@@ -3,6 +3,8 @@ package base;
 import java.awt.Color;
 
 import base.custom_blocks.DamageBlock;
+import base.custom_blocks.DeathBlock;
+import base.custom_blocks.SlowBlock;
 import fr.pwal.base.physic.Gravity;
 import fr.pwal.graphics.base.Application;
 import fr.pwal.level.Block;
@@ -12,11 +14,12 @@ import fr.pwal.level.Player;
 
 public class Main {
 	public static void main(String args[]) {
-		Block[] blocks = { new DamageBlock('A', "/ressources/textures/blocks/grass_side.png"), new Block('B', "/ressources/textures/blocks/sand.png"),
+		Block[] blocks = { new DamageBlock('A', "/ressources/textures/blocks/grass_side.png"), new SlowBlock('B', "/ressources/textures/blocks/sand.png"),
 						new Block('C', "/ressources/textures/blocks/cobblestone.png"), new Block('D', "/ressources/textures/blocks/stone_slab_side.png"),
 						new Block('E', "/ressources/textures/blocks/door_wood_lower.png", false), new Block('F', "/ressources/textures/blocks/door_wood_upper.png", false),
 						new Block('G', "/ressources/textures/blocks/door_iron_lower.png", false), new Block('H', "/ressources/textures/blocks/door_iron_upper.png", false),
-						new Block('I', "/ressources/textures/blocks/wool_colored_light_blue.png", false), new Block('J', "/ressources/textures/blocks/dirt.png") };
+						new Block('I', "/ressources/textures/blocks/wool_colored_light_blue.png", false), new Block('J', "/ressources/textures/blocks/dirt.png"),
+						new DeathBlock('K', "/ressources/textures/blocks/door_wood_lower.png", false)};
 
 		//		Application app = new Application("Test", 950, 400, 2.0f, new Level(Gravity.GRAVITY_DOWN, "/ressources", blocks,
 		//				new Player[] { new Player("Gagoi", 50, "/ressources/textures/characters/Sprite1.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE),
@@ -59,7 +62,7 @@ public class Main {
 		};
 
 		new Application("Test", 950, 400, 2.0f, new LevelChain(levels, "Road to success", new Player[] { new Player("Gagoi", 50, "/ressources/textures/characters/Sprite1.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE),
-						new Player("Denki_le_moche", 50, "/ressources/textures/characters/Sprite2.png", new int[] { 38, 37, 40, 39, 96 }, Color.PINK)
+						new Player("Denki_le_moche", 50, "/ressources/textures/characters/Sprite8.png", new int[] { 38, 37, 40, 39, 96 }, Color.PINK)
 		}));
 	}
 }

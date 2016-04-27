@@ -15,7 +15,7 @@ public class DamageBlock extends Block implements BlockEffect {
 	}
 
 	@Override
-	public void doSpecialEffect(Player p) {
+	public void doSpecialEffect(Player p, int posX, int posY) {
 
 	}
 
