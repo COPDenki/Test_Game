@@ -19,7 +19,7 @@ public class Main {
 						new Block('E', "/ressources/textures/blocks/door_wood_lower.png", false), new Block('F', "/ressources/textures/blocks/door_wood_upper.png", false),
 						new Block('G', "/ressources/textures/blocks/door_iron_lower.png", false), new Block('H', "/ressources/textures/blocks/door_iron_upper.png", false),
 						new Block('I', "/ressources/textures/blocks/wool_colored_light_blue.png", false), new Block('J', "/ressources/textures/blocks/dirt.png"),
-						new DeathBlock('K', "/ressources/textures/blocks/door_wood_lower.png", false)};
+						new DeathBlock('K', "/ressources/textures/blocks/chorus_plant.png", false)};
 
 		//		Application app = new Application("Test", 950, 400, 2.0f, new Level(Gravity.GRAVITY_DOWN, "/ressources", blocks,
 		//				new Player[] { new Player("Gagoi", 50, "/ressources/textures/characters/Sprite1.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE),
