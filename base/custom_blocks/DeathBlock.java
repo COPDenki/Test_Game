@@ -10,6 +10,10 @@ public class DeathBlock extends Block implements BlockEffect{
 		super(id, spritePath, isHard);
 	}
 
+	public DeathBlock(char id, String spritePath, boolean isHard, boolean isAnimated) {
+		super(id, spritePath, isHard, isAnimated);
+	}
+
 	@Override
 	public void doSpecialEffect(Player p, int posX, int posY) {
 		if (isPlayerInside(p, posX, posY)) p.setLife(0);

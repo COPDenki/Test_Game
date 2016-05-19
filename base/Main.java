@@ -19,14 +19,14 @@ public class Main {
 						new Block('E', "/ressources/textures/blocks/door_wood_lower.png", false), new Block('F', "/ressources/textures/blocks/door_wood_upper.png", false),
 						new Block('G', "/ressources/textures/blocks/door_iron_lower.png", false), new Block('H', "/ressources/textures/blocks/door_iron_upper.png", false),
 						new Block('I', "/ressources/textures/blocks/wool_colored_light_blue.png", false), new Block('J', "/ressources/textures/blocks/dirt.png"),
-						new DeathBlock('K', "/ressources/textures/blocks/chorus_plant.png", false), new Block('L', "/ressources/textures/blocks/grass_side_snowed.png"),
+						new Block('K', "/ressources/textures/blocks/chorus_plant.png", false), new Block('L', "/ressources/textures/blocks/grass_side_snowed.png"),
 						new Block('M', "/ressources/textures/blocks/hay_block_side.png"),new Block('N', "/ressources/textures/blocks/ladder.png"),
 						new Block('O', "/ressources/textures/blocks/log_spruce.png"),new Block('P', "/ressources/textures/blocks/mycelium_side.png"),
 						new Block('Q', "/ressources/textures/blocks/mycelium_top.png", false),new Block('R', "/ressources/textures/blocks/netherrack.png"),
 						new Block('S', "/ressources/textures/blocks/planks_oak.png"),new Block('T', "/ressources/textures/blocks/obsidian.png"),
 						new Block('U', "/ressources/textures/blocks/purpur_block.png"),new Block('V', "/ressources/textures/blocks/tnt_side.png"),
 						new Block('W', "/ressources/textures/blocks/dirt2.png"),new Block('X', "/ressources/textures/blocks/mycelium_top_ground.png"),
-						new DeathBlock('Y', "/ressources/textures/blocks/chorus_plant2.png", false),new Block('Z', "/ressources/textures/blocks/tnt_side.png"),};
+						new DamageBlock('Y', "/ressources/textures/blocks/chorus_plant2.png"),new DeathBlock('Z', "/ressources/textures/blocks/lava.png", false, true),};
 
 		//		Application app = new Application("Test", 950, 400, 2.0f, new Level(Gravity.GRAVITY_DOWN, "/ressources", blocks,
 		//				new Player[] { new Player("Gagoi", 50, "/ressources/textures/characters/Sprite1.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE),
@@ -68,8 +68,8 @@ public class Main {
 						new Level(Gravity.GRAVITY_DOWN, "/ressources/levels/World2/9", blocks),
 		};
 
-		new Application("Test", 950, 400, 2.0f, new LevelChain(levels, "Road to success", new Player[] { new Player("Gagoi", 50, "/ressources/textures/characters/Sprite1.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE),
-						new Player("Denki_le_moche", 50, "/ressources/textures/characters/Sprite8.png", new int[] { 38, 37, 40, 39, 96 }, Color.PINK)
+		new Application("Participants Wondering About Lands", 950, 440, 2.0f, new LevelChain(levels, "Road to success", new Player[] { new Player("Gagoi", 50, "/ressources/textures/characters/Sprite1.png", new int[] { 90, 81, 83, 68, 32 }, Color.BLUE),
+						new Player("Denki", 50, "/ressources/textures/characters/Sprite8.png", new int[] { 38, 37, 40, 39, 96 }, Color.PINK)
 		}));
 	}
 }
